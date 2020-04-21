@@ -1,0 +1,193 @@
+program to print pre order, in order and post onder transversal on binany uce. 
+#include<stdio.u> 
+# include stdlib.u. struct node 
+int data; 
+int value; struct node * left; struct node * rigut; 
+void inoider ( stouct node * 7006) 
+if ( root ==NULL) 
+return; in order croot + left); 
+printf ("%d "Y00€ data); in order (root right); 
+void pre order struct vode * root) 
+if (100t == NULL) 
+return on 
+printf("%dy, root → data); pre order (root left); 
+pre order (root right); 
+void post order (struck node * yoot) 
+Scanned with CamScanner 
+if (root = = NULL) 
+return; post Order (200t Left); post order (root - Right), 
+printf("%d " root 
+data); 
+Struct node * create Node (value) e struct node *new node = mal loc( size of 
+(struct node)); new node a data = value; new node + left = WOLL, new node - Right = NULLG 
+Yeturn New node; 
+void maine ) 
+ce 
+struct node * yoot = create ncode); 
+root > Left = create neode (12); 800t Right= create Node (9); VODE na Left + left = create Node (10); 800t + Left + Right = create Node (15); VOCE + Riquita left = create Node (11); MODt Riqut -> Riqut = create Node (16); 
+print f ("In Ordey Eyansversal In"); 
+in order (root); print f("In pre ordex erauve rallo); 
+pre order (root); 
+Scanned with CamScanner 
+printf("In posto de traversalin di 
+post onder croot); 
+altput: 
+Inorder traversal 10 - 12 - 15 11497 167 pre order trallersal 1+12 7 107 15 97 11 ~ 16 → post onder traversal 
+10-15 12 -11 16+9717 rite a c program to create Corinsert) and in order braversal on binary search tree. 
+#include<stdio.h> #include <stdlib.h> Struct node 
+له 
+int key; 
+seruect node* left , * rigut; 
+} 
+Seycct node * new node (int item) 
+Struct node * temp = (strcct node *) malloc ( size of remon reuzetemi doc struct node)); 
+temp 4 Left = tempu sigut = NOU geturn temps 
+aos 
+void inorder (besuce mode * 700€) 
+& if (root) = NULC) 
+مع 
+Scanned with CamScanner 
+inoydev L root -> left); 
+printf("%d\n", root ked); in order (root right); 
+struct node * insert (struct node * node, int key) 
+if (node == NULL) return new node (key) 
+it crey, Nodex rey) mode as left = incest (node & left, key); else if (key> node & key) node & right & insert (node right, key), retinin node; 
+int main() 
+Serit node * 800t = NULL root = insert( root, 3); insert ( 800t)12) insert ( root) 51); insert (800€ ) 43); insert (YOOE, 34); insert (0000)98); la p insert (YOOĆ) 5); inorder (Y00E); retuino, 
+output 
+37 43 
+Scanned with CamScanner 
+Talrite ac 
+program clepth first search (DFS) using a 
+array 
+#include <stdio.uz 
+void ofs (int); 
+int Glloj[10], visted (10], ni loid main() 
+intii; 
+printf ("enter number of vertices:"); scanf("%d'on); printf ("In enter adjacency matrice of the graph ") for(ico; ich, itt) 
+for(j = 0; j<n; j++) scanf ("%d) $ Geuli]); for(i=0; i<n; itt) visited liges 
+DFS (O); 
+void DFS (int i) 
+e int i; 
+print f("\n%d", o); 
+visited lise 1; for(j = 0; j<n;itt) 
+if ( ! visited( 1 I bob alilli)= = 1] DFS (3); 
+output : Enter humber of vextices: 6 Enter adjacency Matry of the graph : 101001 
+Scanned with CamScanner 
+101010 01 01 
+Ioooo 0 1 0 1 0 1 Tololo 
+- 08-Jmo 
+4 talrite a c program breath first search (BFS) using 
+aray. 
+#include <stdio.h> #include <stdlib.h> 
+#define max 100 #define inticel i #define waiting a #define visited 3 
+int n; int adj (MAXI(Mox); int state ( Max]; void create graph U); void Bf - traversal (); void BFS (intv); int quelle (max], front = 4, rear=-15 void insexte quelle cint Veitier); 
+int delete queue (); int is empty_queuec ) 
+int maine ) 
+Scanned with CamScanner 
+create graph(); Br. Traveysal(); yetu 005 
+void BF - Traversall ) 
+int ; for (VEO VEN; VH) 
+state IV - intial; point f ("enter start vertex for BFS: In '); scanf("%d"8V); Bf 5 (V) 
+nos 
+void BF S Line V); 
+20 
+int i; insert.queue (v); state CV Je waiting. . intele (sic empty_queue (1) 
+vederete -queue ); 
+print f ("%dy V); state IV) = visited;. for (i=0; i<n; itt). 
+8 
+if (adj (VI li]==188 State (1) Szinitial) 
+insert:queveri); scale fi ] = waiting; 
+printf("\n"); 
+Scanned with CamScanner 
+void insertqueue lint veste ve) 
+if (rear = = Max-1) printf ("Queue over flow in"), 
+else 
+if (front == 4) 
+front = 0; rear rearti; queue [rean) = verter; 
+Ý 
+int is empty -queue ( ) 
+if (front ==-\\/ front > rear) 
+return 1; else 
+getuono, 
+Y 
+int deletee item if ( front ez-ill front > rear) 
+print f ("queue underflow id'). Exit (1); 
+delete-item Equelle [Front]; 
+front=frontti; getimn. delete item 
+g 
+void create_graphe) 
+int coout, Max-edge, origin, destin; 
+Scanned with CamScanner 
+printf ("enter number of vertices") scant ("%d", n); Max - edge an*(0-1); for coontz l; count <= Hay - edge; couut ++) print f("enter edge %d (14 toquit): count); scanf("%d %," s origin, & dettin); if (c origin == -188 (deltin=--1)) break; if Coriginsenll destin sa n ll origin coll destino) 
+printf ("invalid edge !\n"); coont --; 
+else 
+Cadj Corigin) ( deltin) 1; 
+output: inter number of vertices=9 
+enter Edge ! (-1 to quit ): 0 Enter tage 2 (44 to quit): 0 
+enter Edge 3 (4-1 to quit): 0 
+Enter edge u 41 to quit ).!! 
+Enter cage 5 4 - to quit): 3 
+Enter Edge 6 H4 to quit ); 4 
+Enter Edge 7 H4 to quit ): 6 
+u 
+Scanned with CamScanner 
+enter edge84-1 to quit): 6 
+enter edge 9 444 to quit): 2 
+Enter edge 10 (4-1 to quit ): 4 
+Enter edge 11 (-1 to quit): 7 
+Enter edge 12 (1-1 to quit ):4 
+Enter Edge 13 
+-1 to quit): 7 
+Enter start rester to BFS; 
+0134 2657 
+5. Warite l' program for Linear search algorithm. 
+#include <stdio.h> 
+int main() 
+d 
+int array(100], search, ein print f ("encer member of elements in array\n'); scanf ("%d" 8D); 
+printf ("enter % d inceger Inn); for (c=0; i<n; ctt) 
+scanf("%d", $array (0)); print f ("enter a number to search in'); scanf("%d", & search); 
+for (120°c chi C++)! 
+لم 
+if Carray(C)= = search) 
+printf ("%d present at location%dIn 
+search (tt); 
+Scanned with CamScanner 
+Break; 
+في) 
+if (c==1) printf ("%d isn't present in the array in retenn og 
+search); 
+output 
+Enter neember of elemente in array 
+Enter 5 
+integers 
+14 
+95 
+38 
+Enter a member to search 
+95 present at location u. 
+6. Dante a C program for binary search algoritum. 
+# inccede <stdio.h> 
+int main ) 
+intc, first, last, Middle, n, search , anaylcoo]; point f ("enter number of elemente in") scant ("%d", $n); printf ("enter %d integers in n); for (c=0; ce n'ctt) 
+scanf("%d" sansay (c)); point f ("encer value to find in') ecanf("%d", o search) 
+first = 0; 
+Scanned with CamScanner 
+last nig Middle EC fórst + last)/2; while (first = last) 
+it (anay (Hiddle) < search) 
+fost = Middleti; else if (array(Middle ) = -search) 
+printf ("%d found at location %d In Search, 
+Middle + 1); breale; 
+Else last = Middle-li Middiez (first trast)/2; 
+if (first laut) 
+printf("not found 5% is o't present in 
+the we in search); return 0; 
+output: 
+enter number of Elements 
+enter 
+s integers 
+as 
+36 
+9 Enter value to find in su SI found out location 4. 
+Scanned with CamScanner 
